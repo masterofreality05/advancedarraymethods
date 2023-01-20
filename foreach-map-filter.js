@@ -8,8 +8,6 @@ Write a function called doubleValues which accepts an array and returns a new ar
 doubleValues([1,2,3]) // [2,4,6]
 doubleValues([5,1,2,3,10]) // [10,2,4,6,20]*/
 
-
-
 function doubleValues(arr){
     let newArray = []
     arr.forEach(function(val){
@@ -70,23 +68,7 @@ function showFirstAndLast(arr){
 Write a function called addKeyAndValue which accepts an array of objects, a key, and a value and 
 returns the array passed to the function with the new key and value added for each object
 
-addKeyAndValue(
-[
-  {name: 'Elie'},
-  {name: 'Tim'},
-  {name: 'Matt'},
-  {name: 'Colt'}
-],
-  'title',
-  'instructor'
-)
 
-/*
-  [
-    {name: 'Elie', title:'instructor'},
-    {name: 'Tim', title:'instructor'},
-    {name: 'Matt', title:'instructor'},
-    {name: 'Colt', title:'instructor'}
   ]*/
 
 let objArray = [
@@ -110,11 +92,6 @@ function addKeyAndValue(arr,key,value){
 Write a function called vowelCount which accepts a string and returns an object with the keys as the vowel and the values as the number of times the vowel appears in the string.
 This function should be case insensitive so a lowercase letter and uppercase letter should count
 
-vowelCount('Elie') // {e:2,i:1};
-vowelCount('Tim') // {i:1};
-vowelCount('Matt') // {a:1})
-vowelCount('hmmm') // {};
-vowelCount('I Am awesome and so are you') // {i: 1, a: 4, e: 3, o: 3, u: 1}
 */
 
 function vowelCount(string){
@@ -158,9 +135,7 @@ function doubleValuesWithMap(arr){
 
 /*valTimesIndex
 Write a function called valTimesIndex which accepts an array and returns a new array with each value multiplied by the index it is currently at in the array.
-
-valTimesIndex([1,2,3]) // [0,2,6]
-valTimesIndex([1,-2,-3]) // [0,-2,-6]*/
+*/
 
 function valTimesIndex(arr){
 
@@ -178,9 +153,6 @@ let objectArray2 = [
     {name: 'Tim'},
     {name: 'Matt'},
     {name: 'Colt'}]
-
-  // ['Elie', 'Tim', Matt', 'Colt']
-
 
 function extractKey(arr,key){
 
@@ -212,8 +184,6 @@ function extractFullName(arr,name){
       })
   }
 
-    // ['Elie Schoppik', 'Tim Garcia', 'Matt Lane', 'Colt Steele']
-
 /*filter
 filterByValue
 Write a function called filterByValue which accepts an array of objects and a key and returns a new array with all the objects that contain that key.
@@ -236,9 +206,7 @@ function filterByValue(arr){
 
 /*find
 Write a function called find which accepts an array and a value and returns the first element in the array that has the same value as the second parameter or undefined if the value is not found in the array.
-
-find([1,2,3,4,5], 3) // 3
-find([1,2,3,4,5], 10) // undefined*/
+*/
 
 function find(arr,num){
    return arr.filter(function(val){
@@ -250,19 +218,6 @@ function find(arr,num){
 /*findInObj
 Write a function called findInObj which accepts an array of objects, a key, and some value 
 to search for and returns the first found value in the array.
-
-findInObj(
-  [
-    {first: 'Elie', last:"Schoppik"},
-    {first: 'Tim', last:"Garcia", isCatOwner: true},
-    {first: 'att', last:"Lane"},
-    {first: 'Colt', last:"Steele", isCatOwner: true}
-  ],
-  'isCatOwner',
-  true
-)
-
-// {first: 'Tim', last:"Garcia", isCatOwner: true}
 */
 
 function findInObj(arr,key,search){
@@ -275,9 +230,6 @@ function findInObj(arr,key,search){
 removeVowels
 Write a function called removeVowels which accepts a string and returns a new string with all of the vowels (both uppercased and lowercased) removed. Every character in the new string should be lowercased.
 
-removeVowels('Elie') // ('l')
-removeVowels('TIM') // ('tm')
-removeVowels('ZZZZZZ') // ('zzzzzz')
 */
 
 function removeVowels(string){
