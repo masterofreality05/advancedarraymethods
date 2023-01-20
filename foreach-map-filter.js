@@ -8,8 +8,7 @@ Write a function called doubleValues which accepts an array and returns a new ar
 doubleValues([1,2,3]) // [2,4,6]
 doubleValues([5,1,2,3,10]) // [10,2,4,6,20]*/
 
-let wordArray = ["here","are","some","words"]
-let numArray = [1,2,3,4,5,6]
+
 
 function doubleValues(arr){
     let newArray = []
@@ -205,9 +204,6 @@ let objectArray3 = [
   {first: 'Colt', last:"Steele"}
 ]
 
-
-
-
 function extractFullName(arr,name){
 
     return  arr.map(function(val){
@@ -217,7 +213,6 @@ function extractFullName(arr,name){
   }
 
     // ['Elie Schoppik', 'Tim Garcia', 'Matt Lane', 'Colt Steele']
-
 
 /*filter
 filterByValue
@@ -310,15 +305,4 @@ return odd.map(function(val){
     return val *= 2;
 })
 
-
 }
-
-
-
-
-
-
- 
-
-
-
